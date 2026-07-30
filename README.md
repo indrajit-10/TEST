@@ -1,11 +1,11 @@
 # Resend Functionality Test
 
-A tiny script that checks whether [Resend](https://resend.com) email sending is working.
+A tiny Python script that checks whether [Resend](https://resend.com) email sending is working.
 
 ## Setup
 
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
 ## Run
@@ -18,7 +18,7 @@ export RESEND_API_KEY="re_xxxxxxxx"
 # export FROM_EMAIL="onboarding@resend.dev"
 # export TO_EMAIL="you@example.com"
 
-node test-resend.js
+python test_resend.py
 ```
 
 ## What you'll see
