@@ -56,11 +56,40 @@ Two separate causes, which should not be conflated:
 
 | File | What it is |
 |---|---|
-| `workbook.md` | The audit workbook. **Currently the tail only (§6.2–§9)** — the first synthesis pass returned a truncated final message and §1–§6.1 were lost. A repair pass regenerates them as `workbook-front.md`. |
-| `workbook-front.md` | §1–§6.1: executive summary, scorecard, the m./www decision, findings by priority, risk register, May 14 cliff diagnosis, AEO content plan, GEO access plan. |
+| **`workbook-full.md`** | **Start here.** The stitched workbook, §1–§9. One marked gap at the §6.2 seam (see below). |
+| `workbook.md` | Raw tail (§6.2–§9) from the first synthesis pass, which returned a truncated final message. Kept for provenance. |
+| `workbook-front.md` | Raw front half (§1–§6.1) from the repair pass. Kept for provenance. |
 | `critic.md` | An independent completeness critique of `workbook.md`. Strong and worth reading in full — it caught the truncation, and flagged real gaps the audit missed (off-page authority never measured, the May 14 cliff never diagnosed, CrUX/PageSpeed APIs available but unused, email deliverability never audited, the roadmap running through Q4 peak with no change-freeze). |
 | `findings.json` | All 94 unverified findings, with severity, evidence, proposed fix, effort and `needs_live_fetch`. |
 | `benchmark.json` | 30 AI-visibility prompts scored: brands cited, rank, citation sources, winning page pattern. |
+
+## One known gap in `workbook-full.md`
+
+The truncation destroyed the opening of §6.2, all of §6.2.1, and **Tier 1 of the
+PR target list**. That gap is marked in place and was **not** reconstructed —
+only one Tier 1 row was recoverable from `findings.json`. Regenerate §6.2.1 from
+`pr-target-list`, `review-platform-fragmentation`,
+`brand-confusion-123cards-contaminates-reputation`,
+`third-parties-own-the-brand-facts` and `trustpilot-keyed-to-www-only` before
+circulating the document externally.
+
+## A correction carried into this run
+
+An earlier reading of the indexed URL patterns concluded that `www` and `m.`
+"share no taxonomy" — `www` using slugs (`/birthday/happy_birthday/birthday191.html`)
+and `m.` using numeric IDs (`/do/card/120478`). **That was wrong.** A
+`site:www.123greetings.com/do/card` probe returns indexed `www` numeric URLs:
+`/do/card/330206`, `/do/card/101364`, `/do/card/101633`, `/do/card/101672`.
+
+`www` serves the numeric namespace too, so a single card has at least three
+indexable URLs — `www` slug, `www` numeric, `m.` numeric — plus the mirror-host
+copies. That is same-host duplication, which is a materially worse problem than
+the cross-host pairing originally described, and no prior-work ticket covers it.
+It is finding `www-serves-do-card-numeric-namespace` (P0-1).
+
+The same probe shows the generic-homepage-title bug is **not** m.-only:
+`www/do/card/330206` carries the homepage title and `www/do/card/101633` has the
+title `card`.
 
 ## Headline numbers
 
