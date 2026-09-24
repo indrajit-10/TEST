@@ -59,19 +59,30 @@ Two separate causes, which should not be conflated:
 | **`workbook-full.md`** | **Start here.** The stitched workbook, §1–§9. One marked gap at the §6.2 seam (see below). |
 | `workbook.md` | Raw tail (§6.2–§9) from the first synthesis pass, which returned a truncated final message. Kept for provenance. |
 | `workbook-front.md` | Raw front half (§1–§6.1) from the repair pass. Kept for provenance. |
+| `section-6.2.1.md` | §6.2 / §6.2.1 / §6.2.2 Tier 1, regenerated from the findings after truncation. Already spliced into `workbook-full.md`. |
 | `critic.md` | An independent completeness critique of `workbook.md`. Strong and worth reading in full — it caught the truncation, and flagged real gaps the audit missed (off-page authority never measured, the May 14 cliff never diagnosed, CrUX/PageSpeed APIs available but unused, email deliverability never audited, the roadmap running through Q4 peak with no change-freeze). |
 | `findings.json` | All 94 unverified findings, with severity, evidence, proposed fix, effort and `needs_live_fetch`. |
 | `benchmark.json` | 30 AI-visibility prompts scored: brands cited, rank, citation sources, winning page pattern. |
 
-## One known gap in `workbook-full.md`
+## §6.2.1 — regenerated, not original
 
-The truncation destroyed the opening of §6.2, all of §6.2.1, and **Tier 1 of the
-PR target list**. That gap is marked in place and was **not** reconstructed —
-only one Tier 1 row was recoverable from `findings.json`. Regenerate §6.2.1 from
-`pr-target-list`, `review-platform-fragmentation`,
-`brand-confusion-123cards-contaminates-reputation`,
-`third-parties-own-the-brand-facts` and `trustpilot-keyed-to-www-only` before
-circulating the document externally.
+The truncation destroyed the opening of §6.2, all of §6.2.1 and Tier 1 of the PR
+target list. Those have been **regenerated from the 16 citation-surface findings
+in `findings.json`** (see `section-6.2.1.md` for the section standalone) and
+spliced into `workbook-full.md`. The regenerated text is marked as such in place.
+
+Two caveats on it:
+
+- The **tier structure of Tier 1 is inferred**, not recovered. Tiers 2–4 survived
+  and escalate from "correct an existing mention" to "win new inclusion" to
+  "create the category", so Tier 1 is reconstructed as "claim and correct the
+  properties you already own or can claim" — which is consistent with the
+  surviving tiers and with the findings, but is not necessarily the original
+  framing.
+- Like every other finding in this directory, none of the 16 sources was
+  adversarially verified. **Re-read every third-party URL and quotation before
+  using it in an outreach email** — §6.2.2 asks publishers to correct wrong
+  numbers, so quoting a wrong number would be self-defeating.
 
 ## A correction carried into this run
 
