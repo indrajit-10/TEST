@@ -2,9 +2,31 @@
 
 Generated 2026-09-23 from a 33-agent workflow run (`wf_d88ae8a0-187`).
 
+## Verification status — read `verification.md` first
+
+The 19 **critical** findings have now been properly verified (2026-09-24, run
+`wf_c653446c-ac2`). Results: **3 confirmed, 14 partially confirmed, 2
+unverifiable, 0 refuted.** 17 of the 19 were downgraded from `critical`.
+
+The dominant outcome — *the observation is real, the inference or the magnitude
+is overclaimed* — is the one the earlier pass had no way to record.
+
+**`verification.md` supersedes the workbook wherever they disagree.** Four things
+in the workbook must NOT be shipped as written:
+
+| Do not ship | Why |
+|---|---|
+| The "no subscription product" disambiguation copy | **123Greetings Pro exists at $5.99/year**, confirmed from the company's own positioning. Publishing "has no subscription product" on the brand's own domain hands every complainant a documented contradiction. Correct copy: free to send, ad-supported, one optional $5.99/yr ad-free upgrade, no trial, no auto-renewing membership, no per-card charge. |
+| The `www/do/card/` 301, shipped alone | `/do/card/{id}` is plausibly the link embedded in delivered e-card notification emails. Gate on a delivery-path audit. Also, if the m. canonical targets the www *numeric* URL, shipping the 301 first canonicals the entire mobile card corpus to a redirect. |
+| The paste-ready `robots.txt` in §6.1.2, wholesale | It embeds `Disallow` rules two investigators independently call harmful — the `/s/` facet URLs are working hubs with correct distinct titles — and pasting it would silently overwrite exclusions nobody has read. Read, diff, merge. Never replace. |
+| VideoObject retyping of card pages | Four independent objections: invented `embedUrl`, a sub-30s duration floor, dishonest for animated cards, and a JS-injected player. |
+
+Everything still unverified — the 42 high, 31 medium and 2 low findings — remains
+in the state described below.
+
 ## Read this before using any finding
 
-**The findings in this directory are leads, not confirmed problems.**
+**The non-critical findings in this directory are leads, not confirmed problems.**
 
 101 findings were produced across seven audit lenses. The run was configured
 "lean", which sent only the single most severe finding per lens to a
@@ -60,6 +82,7 @@ Two separate causes, which should not be conflated:
 | `workbook.md` | Raw tail (§6.2–§9) from the first synthesis pass, which returned a truncated final message. Kept for provenance. |
 | `workbook-front.md` | Raw front half (§1–§6.1) from the repair pass. Kept for provenance. |
 | `section-6.2.1.md` | §6.2 / §6.2.1 / §6.2.2 Tier 1, regenerated from the findings after truncation. Already spliced into `workbook-full.md`. |
+| **`verification.md`** | **Adjudicated verification of the 19 critical findings.** Verdict table, eight cross-finding conflicts, the prevalence problem, a "what survives / do not ship" split, and a consolidated checklist of blocked checks ordered by how many findings each unblocks. Supersedes the workbook on conflict. |
 | `critic.md` | An independent completeness critique of `workbook.md`. Strong and worth reading in full — it caught the truncation, and flagged real gaps the audit missed (off-page authority never measured, the May 14 cliff never diagnosed, CrUX/PageSpeed APIs available but unused, email deliverability never audited, the roadmap running through Q4 peak with no change-freeze). |
 | `findings.json` | All 94 unverified findings, with severity, evidence, proposed fix, effort and `needs_live_fetch`. |
 | `benchmark.json` | 30 AI-visibility prompts scored: brands cited, rank, citation sources, winning page pattern. |
@@ -118,7 +141,27 @@ behind it. Strict-grounding engines drop exactly those mentions.
 
 ## Next inputs that would most change the findings
 
-1. An m. card page view-source. It is the indexed template and it has never been seen.
-2. `robots.txt` for both hosts — determines whether citation crawlers can reach the site at all.
-3. Google Search Console verification on both hosts. Resolves prevalence for nearly every finding, and its 16-month history covers the May 14 cliff retroactively.
-4. A crawl export (Screaming Frog free tier covers 500 URLs), run once with JS rendering off and once on. The diff between the two runs is itself the AI-crawler visibility answer.
+Ordered by how many of the 19 critical findings each unblocks — see §6 of
+`verification.md` for the exact commands.
+
+1. **Google Search Console, verified on `www`, `m.` and `blog.` — unblocks ~12.**
+   Nothing else comes close. Resolves prevalence for eight findings at once, its
+   16-month history covers the May 14 cliff retroactively, and the Manual Actions
+   panel settles a policy-exposure question the audit never thought to ask.
+   Screenshot Manual Actions and Security Issues first.
+2. **One card-page fetch plus five greps — unblocks ~8.** Use raw source, not the
+   rendered DOM; that distinction is the entire discriminating test for the
+   JS-dependency findings, and a headless browser answers neither.
+3. **Three `robots.txt` fetches — unblocks ~6.** Converts the AI-crawler-access
+   finding from an unverified recommendation into a confirmed defect or a no-op.
+4. **The `/do/card/` canonical chain — unblocks ~3, and gates a dangerous fix.**
+5. A crawl export (Screaming Frog free tier covers 500 URLs), run once with JS
+   rendering off and once on. The diff between the two runs is itself the
+   AI-crawler visibility answer.
+
+**A free PageSpeed Insights API key is worth getting.** `googleapis.com` is
+reachable from the sandbox even though `123greetings.com` is not — a keyless call
+returns HTTP 429 (quota), not an egress block. With a key, the PSI API returns
+`canonical`, `is-crawlable` (which detects `noindex` and `X-Robots-Tag`),
+`document-title` and `robots-txt` for any URL, which reads several of the blocked
+findings indirectly without waiting on a network-policy change.
