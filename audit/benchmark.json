@@ -1,0 +1,748 @@
+[
+  {
+    "prompt": "best free ecard sites",
+    "intent": "comparative",
+    "brands_cited": [
+      "Paperless Post",
+      "Punchbowl",
+      "Blue Mountain",
+      "Hallmark",
+      "123Greetings",
+      "American Greetings",
+      "Canva"
+    ],
+    "brand_present": true,
+    "brand_rank": 5,
+    "citation_sources": [
+      "https://www.paperlesspost.com/cards/category/free-birthday-ecards",
+      "https://www.punchbowl.com/ecards",
+      "https://www.hallmark.com/ecards/",
+      "https://www.bluemountain.com/free-ecards",
+      "https://www.canva.com/create/ecards/",
+      "https://www.123greetings.com/",
+      "https://www.americangreetings.com/free/ecards",
+      "https://forums.tomsguide.com/threads/best-e-card-sites.313489/post-1382098"
+    ],
+    "winning_page_pattern": "Winner is a brand's own /free-ecards or /ecards LANDING page whose title asserts the comparative claim ('Send Free Ecards Online', 'Send a Free Digital Greeting') plus third-party roundups. 123greetings ranks, but only via the bare HOMEPAGE \u2014 the worst possible citation target for a comparative prompt. Its indexed title is a keyword pile ('Free Greeting cards, Wishes, Ecards, Birthday Wishes, Funny Cards & Gifs') containing no comparative or value claim, so an engine has nothing extractable and describes it in vague filler ('has wonderful cards for every occasion'). Competitors get a specific sentence; 123greetings gets a shrug. There is NO /free-ecards positioning page on www \u2014 the 17 sitemap hubs are all occasion taxonomies, not a 'why us / what's free' page. Nothing in the prior-work list creates one."
+  },
+  {
+    "prompt": "best free birthday ecards",
+    "intent": "transactional",
+    "brands_cited": [
+      "Paperless Post",
+      "Punchbowl",
+      "American Greetings",
+      "123cards.com",
+      "Blue Mountain",
+      "123Greetings",
+      "Hallmark",
+      "Doozy Cards"
+    ],
+    "brand_present": true,
+    "brand_rank": 6,
+    "citation_sources": [
+      "https://www.paperlesspost.com/cards/category/free-birthday-ecards",
+      "https://partyideas.punchbowl.com/p/free-birthday-ecards",
+      "https://www.hallmark.com/ecards/",
+      "https://www.doozycards.com/ecards/birthday",
+      "https://www.123cards.com/birthday-ecards/",
+      "https://www.americangreetings.com/free/ecards",
+      "https://www.123greetings.com/",
+      "https://www.bluemountain.com/ecards/birthday"
+    ],
+    "winning_page_pattern": "Every winner is an occasion-scoped deep URL \u2014 /cards/category/free-birthday-ecards, /ecards/birthday, /birthday-ecards/ \u2014 with 'free' and 'birthday' in both slug and title. 123greetings owns a birthday hub (/birthday/) and ~500 card pages under it, yet the HOMEPAGE is what ranks. That is the single clearest signal in this batch that the birthday hub is not being selected as the canonical birthday entity. Contributing evidence: the hub lists every card TWICE (Popular and Latest), subcategory blurbs truncate with '...', and card-level isPartOf mislabels the 'Happy Birthday' subcategory as merely 'Birthday' \u2014 so the hub-to-subcategory-to-card hierarchy an engine would traverse is flattened and self-duplicating. CRITICAL: 123cards.com ranks ABOVE 123greetings with a clean /birthday-ecards/ page. An engine grounding on these results can easily attribute the free-birthday-ecard answer to the confusingly-similar brand. The shipped Birthday hub CollectionPage+ItemList work is the right target but evidently has not moved hub selection."
+  },
+  {
+    "prompt": "free animated birthday ecards",
+    "intent": "transactional",
+    "brands_cited": [
+      "Blue Mountain",
+      "American Greetings",
+      "123cards.com",
+      "Moonpig",
+      "Punchbowl",
+      "Doozy Cards",
+      "123Greetings",
+      "Jacquie Lawson"
+    ],
+    "brand_present": true,
+    "brand_rank": 7,
+    "citation_sources": [
+      "https://www.bluemountain.com/free-ecards",
+      "https://www.americangreetings.com/free/ecards",
+      "https://www.moonpig.com/us/personalised-cards/ecards/free-birthday/",
+      "https://www.doozycards.com/ecards/birthday",
+      "https://www.123cards.com/birthday-ecards/",
+      "https://partyideas.punchbowl.com/p/free-birthday-ecards",
+      "https://www.123greetings.com/",
+      "https://www.jacquielawson.com/cards/birthday"
+    ],
+    "winning_page_pattern": "Worst placement of the three birthday prompts \u2014 7th, homepage again. 'Animated' is a FORMAT qualifier, and format is exactly where 123greetings has unique inventory no competitor matches: the m. host already exposes format facets (/s/videos/, /s/gif/, /s/postcards) across the whole catalogue. But those facet URLs live only on m., under a taxonomy that shares nothing with www, with no known m. sitemap and indexed junk states like /do/cards/eapr_goodfriday/s/gif/p/ (trailing empty pagination). So the site HAS the animated-birthday inventory and has no clean, indexable, well-titled www page expressing it. www has no format dimension at all. Additional handicap: card media loads via JS (Load_Video_Card into an empty div), so a non-JS crawler on a 123greetings animated card sees ~30 words and cannot verify the card is animated \u2014 the one attribute the prompt asks about is invisible to the crawler. Needs live fetch to confirm whether any www animated/video facet page exists: needs_live_fetch=true."
+  },
+  {
+    "prompt": "free ecards no signup required",
+    "intent": "transactional",
+    "brands_cited": [
+      "123Greetings",
+      "Instant eCard",
+      "GotFreeECards.com",
+      "Greetings Island",
+      "Free For All eCards",
+      "Blue Mountain",
+      "American Greetings",
+      "Punchbowl"
+    ],
+    "brand_present": true,
+    "brand_rank": 1,
+    "citation_sources": [
+      "https://www.thankbox.com/blog/top-free-ecards-for-fun-and-personal-greetings",
+      "https://www.kudoboard.com/blog/top-5-free-ecard-options-for-all-occasions/",
+      "https://www.bluemountain.com/free-ecards",
+      "https://www.instantecard.com/free-ecards",
+      "https://www.got-free-ecards.com/",
+      "https://www.freeforallecards.com/free-no-sign-up-ecards",
+      "https://rigorousthemes.com/blog/best-free-e-cards-websites-with-no-sign-up/",
+      "https://www.americangreetings.com/free/ecards",
+      "https://www.punchbowl.com/ecards"
+    ],
+    "winning_page_pattern": "IMPORTANT CAVEAT \u2014 this is the one result where rank 1 is misleading and I want to be explicit about the proxy's limits. 123greetings was named FIRST in the generated answer ('over 40,000 designs and no signup required') but NO 123greetings.com URL appeared in the retrieved results at all. That placement came from the model's parametric memory of the brand, not from grounding. Two consequences. (1) It is a genuine asset: the brand is strongly encoded in LLM weights as the default no-signup free-ecard site, which is the single strongest AI-visibility position 123greetings holds anywhere in this batch. (2) It is fragile and uncitable: engines that ground strictly, show citations, or run retrieval-only (Perplexity, AI Overviews) will drop it, because there is no URL to attach. It also produced an unverified '40,000 designs' figure the site cannot corroborate. Winning page type is a no-signup-framed landing page (instantecard.com/free-ecards, freeforallecards.com/free-no-sign-up-ecards) or a roundup. 123greetings' no-signup policy is its strongest differentiator versus Blue Mountain/American Greetings/Hallmark, all of which gate on trial membership \u2014 and it has NO page stating it. This is the highest-leverage missing page in the batch."
+  },
+  {
+    "prompt": "best ecard site for seniors",
+    "intent": "comparative",
+    "brands_cited": [
+      "Hallmark",
+      "Jacquie Lawson",
+      "123Greetings",
+      "CardSnacks",
+      "Blue Mountain",
+      "CardFool"
+    ],
+    "brand_present": true,
+    "brand_rank": 3,
+    "citation_sources": [
+      "https://www.early-retirement.org/threads/best-ecard-electronic-greeting-card-site.98120/",
+      "https://www.top10.com/ecard-sites",
+      "https://www.thankbox.com/blog/our-list-of-top-ecard-websites-to-make-sending-cards-fun-and-hassle-free",
+      "https://recocards.com/blog/ecards/best-ecard-websites/",
+      "https://www.cardsnacks.com/ecards/senior_citizens_day",
+      "https://www.123greetings.com/",
+      "https://greeting-cards-usa.no1reviews.com/us-online-ecard-sites.html",
+      "https://www.bluemountain.com/"
+    ],
+    "winning_page_pattern": "The most important prompt in the batch, because the 50-70 audience IS the core audience \u2014 and the answer is assembled almost entirely from THIRD-PARTY editorial (top10.com, thankbox, recocards, no1reviews) plus a forum thread (early-retirement.org), not from any ecard site's own pages. Jacquie Lawson wins the narrative ('high-quality, interactive, traditional charm, nostalgia') because reviewers give it that language. 123greetings does place 3rd and gets its best grounded description anywhere in this batch \u2014 'one of the oldest and largest free ecard sites anywhere, genuinely free to send with no account required' \u2014 which confirms the no-signup + longevity + scale story is the brand's winning frame when a source states it. Two concrete defects surface here. (1) That same grounded text says 'sending free ecards since 1998'; the brand was founded 1997. The Organization schema is bare (name + url only \u2014 no foundingDate, no logo, no description, no sameAs despite six social profiles linked on the page), so there is no authoritative entity record anywhere for an engine to correct the date against, and the wrong year propagates. (2) The homepage surfaces here under a DIFFERENT indexed title ('123Greetings.com, Free Greetings For The Planet') than in the other five SERPs \u2014 title instability across the index, which weakens entity consolidation. 123greetings has no seniors/accessibility page and no page asserting founding year, catalogue size, or the no-account policy."
+  },
+  {
+    "prompt": "free ecards for grandparents to send",
+    "intent": "occasion",
+    "brands_cited": [
+      "Punchbowl",
+      "Greetings Island",
+      "CrossCards",
+      "Doozycards",
+      "123Greetings",
+      "Blue Mountain",
+      "American Greetings",
+      "Moonpig",
+      "sendwishonline",
+      "Kisseo"
+    ],
+    "brand_present": true,
+    "brand_rank": 5,
+    "citation_sources": [
+      "https://www.punchbowl.com/ecards/national-grandparents-day",
+      "https://www.greetingsisland.com/cards/holidays/grandparents-day",
+      "https://www.crosscards.com/cards/holidays/grandparents-day/",
+      "https://www.bluemountain.com/ecards/grandparents-day",
+      "https://sendwishonline.com/en/group-cards/grandparents-day/photo-cards",
+      "https://www.doozycards.com/ecards/grandparents-day",
+      "https://www.americangreetings.com/ecards/grandparents-day/all-about-grandparents-ecard/card-3124866",
+      "https://www.123greetings.com/events/grandparents_day/",
+      "https://www.moonpig.com/us/personalised-cards/ecards/for-grandparents/",
+      "https://www.kisseo.com/ecard/grandparents-day"
+    ],
+    "winning_page_pattern": "First prompt where a REAL 123greetings deep page ranks rather than the homepage: /events/grandparents_day/ \u2014 and that page is one of the ~12 current-events URLs actually present in the www sitemap. That correlation repeats across this batch and is the central pattern: 123greetings ranks a deep page precisely where the sitemap contains one, and defaults to the homepage everywhere else. The sitemap's ~135 URLs (home, 17 hubs, ~100 world-language, ~12 events) with NO subcategories and NO card pages is therefore acting as the de facto ceiling on which pages an engine can cite. Note also the competitive counter-example: American Greetings ranks an individual CARD page (/ecards/grandparents-day/all-about-grandparents-ecard/card-3124866) with a descriptive slug and human-readable title. 123greetings has ~30,000 card pages and not one ranks here, because none are in the sitemap, www card slugs are semi-opaque (birthday191.html), and m. card URLs are bare numeric IDs (/do/card/120478). A further caveat on the 'grandparents' intent: this prompt is ambiguous between Grandparents Day and everyday cards FOR grandparents; the site appears to cover only the dated event."
+  },
+  {
+    "prompt": "what to write in a birthday card",
+    "intent": "informational",
+    "brands_cited": [
+      "TODAY.com",
+      "Hallmark Ideas & Inspiration",
+      "American Greetings",
+      "Papyrus",
+      "Martha Brook",
+      "Adobe Express",
+      "Quora"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://www.today.com/life/inspiration/what-to-write-in-a-birthday-card-rcna195125",
+      "https://www.papyrusonline.com/lifestyles/what-to-write-in-a-birthday-card",
+      "https://ideas.hallmark.com/articles/birthday-ideas/birthday-wishes/",
+      "https://www.marthabrook.com/blog/30-birthday-messages-to-write-in-a-card/",
+      "https://www.americangreetings.com/inspiration/what-to-write/birthday-messages",
+      "https://artflowersla.com/blogs/news/what-to-write-in-a-birthday-card-funny-sweet-meaningful-messages",
+      "https://jessalittlecreative.com/blogs/news/43-meaningful-thoughtful-birthday-card-messages-for-friends"
+    ],
+    "winning_page_pattern": "Winner is a long-form editorial article on a dedicated content SUBDOMAIN or /inspiration/ path \u2014 ideas.hallmark.com/articles/birthday-ideas/birthday-wishes/ and americangreetings.com/inspiration/what-to-write/birthday-messages are the template: a card retailer running a content hub that wins the informational query and funnels to product. 123greetings ABSENT. But it HAS the asset: blog.123greetings.com/what-to-write-in-a-card/ exists and is indexed, titled 'What to Write in a Card - Messages for Every Occasion.' It simply does not rank for the head term. Diagnosis from available evidence: the content sits on a THIRD subdomain (beyond the www/m. split already documented), the www sitemap contains no blog URLs at all, and the blog's indexed article inventory skews to long-tail occasions (Cousins Day, Girlfriend's Day, Friendship Day, 4th of July, 13th birthday, Mother's Day for wife) rather than the head 'what to write in a [card type]' terms. So the hub page exists but the per-occasion articles that would actually rank are thin or missing at the head. This is the largest addressable AI-visibility gap found: six informational prompts, zero presence, on a content type the brand already publishes. Note the blog Core Web Vitals audit already in flight touches this property but is a performance workstream, not a coverage one."
+  },
+  {
+    "prompt": "what to write in a sympathy card",
+    "intent": "informational",
+    "brands_cited": [
+      "Hallmark Ideas & Inspiration",
+      "1800flowers Petal Talk",
+      "Legacy.com",
+      "Mrs. Fields",
+      "Baylor University School of Social Work"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://www.mrsfields.com/blogs/blog/things-to-write-in-a-sympathy-card",
+      "https://socialwork.web.baylor.edu/news/story/2021/what-write-sympathy-card-offer-meaningful-support",
+      "https://www.legacy.com/contact/en/articles/11095227-how-to-write-a-thoughtful-sympathy-card-message",
+      "https://ideas.hallmark.com/articles/sympathy-ideas/what-to-write-in-a-sympathy-card/",
+      "https://www.1800flowers.com/articles/coping-with-loss/what-to-write-in-a-sympathy-card",
+      "https://www.goldsteinsfuneral.com/the-dos-and-donts-of-writing-a-sympathy-note/",
+      "https://fioredesigns.com/journal/gifts-occasions/what-to-write-in-sympathy-card"
+    ],
+    "winning_page_pattern": "Highest E-E-A-T bar of any prompt here \u2014 the cited set includes a UNIVERSITY school of social work, a funeral director, and Legacy.com (obituaries). Engines treat sympathy as a sensitive/YMYL-adjacent topic and prefer sources with demonstrable credentials or bereavement authority. 123greetings ABSENT and this is the hardest of the six informational prompts to win: it would require genuine expertise signalling, not just a messages listicle. Compounding factor: the card template's Organization entity carries no description, no sameAs, no foundingDate, so the publisher has no authority profile for an engine to weigh at all. Also directly relevant \u2014 the May 14 ranking cliff was traced to Product/review-snippet dual-typing, and typing a SYMPATHY card as a Product with an Offer at price 0.00, shippingDetails and a return policy is the most tonally and semantically wrong the existing card schema gets. Recommend sympathy be treated as the lowest-priority informational target for ranking but the highest-priority one for removing the Product typing."
+  },
+  {
+    "prompt": "what to write in a retirement card",
+    "intent": "informational",
+    "brands_cited": [
+      "Indeed",
+      "Hallmark Business Connections",
+      "Mrs. Fields",
+      "Kudoboard",
+      "GroupTogether",
+      "Oak Harvest Financial Group",
+      "Gallery Collection",
+      "Adobe Express",
+      "Quilling Card"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://www.indeed.com/career-advice/career-development/retirement-card-for-coworker-messages",
+      "https://www.hallmarkbusiness.com/insights/article/what-to-write-in-a-retirement-card-20-ideas/",
+      "https://www.mrsfields.com/blogs/blog/retirement-card-message",
+      "https://quillingcard.com/blogs/quilling-blog/what-to-write-in-a-retirement-card",
+      "https://www.grouptogether.com/us/blog/what-to-write-in-a-retirement-card/",
+      "https://www.kudoboard.com/blog/what-to-write-in-a-retirement-card-for-a-friend/",
+      "https://oakharvestfg.com/blogs/100-retirement-messages/",
+      "https://www.gallerycollection.com/blog/business-insights/workplace-morale/retirement-cards-for-employees-message-ideas-examples/"
+    ],
+    "winning_page_pattern": "The softest target of the six informational prompts and the best strategic fit. The result set is dominated by WORKPLACE-context publishers \u2014 Indeed (career advice), Hallmark BUSINESS Connections, Gallery Collection (workplace morale), a financial advisory firm \u2014 because the query is overwhelmingly coworker/employee-framed. No incumbent ecard brand holds it: Hallmark's winner is its B2B property, not ideas.hallmark.com. The competitive field is weak, dispersed and largely non-endemic, so a well-built relationship-segmented article (coworker / boss / employee / friend, which is exactly how the ranking pages segment) could plausibly break in. This also aligns with the 50-70 audience better than any other prompt in the batch \u2014 retirement is a life event squarely in the demographic. 123greetings ABSENT and, on the indexed blog inventory observed, appears to have no retirement article at all. Whether a retirement card category hub exists on www could not be confirmed without a live fetch: needs_live_fetch=true."
+  },
+  {
+    "prompt": "what to write in a wedding card",
+    "intent": "informational",
+    "brands_cited": [
+      "The Knot",
+      "Zola",
+      "Hitch Studio",
+      "Canvas Discount",
+      "Adobe Express",
+      "YouTube"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://www.theknot.com/content/wedding-wishes-what-to-write-in-a-wedding-card",
+      "https://www.canvasdiscount.com/blog/wedding-card-messages.jsf",
+      "https://hitchstudio.com/28-ideas-for-what-to-write-in-a-wedding-card-formal-casual-funny-or-sentimental/",
+      "https://www.zola.com/expert-advice/topic/invites-paper/day-of-paper",
+      "https://www.adobe.com/express/discover/messages/card/congratulations/wedding",
+      "https://www.youtube.com/shorts/5hXE81cHM24"
+    ],
+    "winning_page_pattern": "Owned by WEDDING-VERTICAL authorities, not card brands \u2014 The Knot and Zola are the entity anchors and even Hallmark does not rank here. The winning page is a vertical publisher's editorial hub ('according to real wedding editors' \u2014 explicit expertise framing). 123greetings ABSENT, and this is the least winnable of the six: the topical authority required is wedding-domain, which a general ecard site cannot assemble. Recommend deprioritising versus retirement, get-well and funny-birthday. Worth noting the m. host exposes a wedding taxonomy (/do/cards/wed_wed_congrats/s/postcards) with format facets that www has no equivalent for, reinforcing that the two codebases express different and non-consolidated coverage of the same occasion \u2014 neither expression ranks here."
+  },
+  {
+    "prompt": "what to write in a get well card",
+    "intent": "informational",
+    "brands_cited": [
+      "Hallmark Ideas & Inspiration",
+      "Parade",
+      "Moonpig",
+      "Harry & David",
+      "cardfactory",
+      "Greetpool",
+      "Adobe Express"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://www.harryanddavid.com/articles/shared-experiences/what-to-write-in-a-get-well-card",
+      "https://www.moonpig.com/ie/blog/gifts-and-wishes/what-to-write-in-a-get-well-soon-card/",
+      "https://ideas.hallmark.com/articles/encouragement-ideas/get-well-wishes/",
+      "https://www.cardfactory.co.uk/cards/ideas-and-inspiration/what-to-write-in-a-get-well-soon-card/",
+      "https://www.greetpool.com/blog/what-to-write-in-a-get-well-card/",
+      "https://parade.com/1184565/michelle-parkerton/get-well-wishes/",
+      "https://entyrecare.com/blog/get-well-wishes/"
+    ],
+    "winning_page_pattern": "Winner is a card-or-gift brand's editorial article (Hallmark /articles/encouragement-ideas/, Moonpig /blog/, cardfactory /ideas-and-inspiration/) plus one mass-media listicle (Parade, '130 Thoughtful Messages'). Lower authority bar than sympathy \u2014 no credentialed sources required \u2014 and the result set is noticeably UK-weighted (Moonpig IE, cardfactory UK), leaving room in US results. This is the strongest pairing opportunity in the batch: 123greetings ALREADY ranks 3rd on the transactional twin ('free get well soon ecards') with a real category hub at /general/getwell/, but holds nothing on the informational twin. A 'what to write in a get well card' article cross-linked to that existing, already-ranking hub is the cheapest informational win available, because half the pair is proven. Ranks alongside retirement as top informational priority."
+  },
+  {
+    "prompt": "funny things to write in a birthday card",
+    "intent": "informational",
+    "brands_cited": [
+      "Press Print Party",
+      "American Greetings",
+      "Funky Pigeon",
+      "Kudoboard",
+      "Adobe Express",
+      "Hopespring Charity eCards",
+      "Pinterest"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://www.pressprintparty.com/life/funny-things-to-write-in-a-birthday-card/",
+      "https://www.americangreetings.com/inspiration/what-to-write/birthday-messages-funny",
+      "https://www.funkypigeon.com/blog/69-funny-birthday-card-messages-wishes-quotes",
+      "https://www.kudoboard.com/blog/funny-birthday-wishes/",
+      "https://ecards.hopespring.org.uk/100-hilarious-birthday-messages-ecard-wishes-for-family-friends-colleagues/",
+      "https://inamatchbox.com/blogs/news/39-humorous-messages-for-your-siblings-birthday-card",
+      "https://adobe.com/express/learn/blog/funny-birthday-card-ideas"
+    ],
+    "winning_page_pattern": "Lowest authority bar of all six informational prompts \u2014 the top result is a small independent blog (pressprintparty.com) and the field includes a UK charity ecard site and a Shopify store blog. Engines here want VOLUME and EXTRACTABILITY: numbered listicles ('100 Funny Things...', '114 Laugh-Out-Loud...', '69 Funny...') grouped into labelled sub-themes (cake humour, aging, siblings, colleagues) that an LLM can lift verbatim. Note American Greetings holds the endemic slot with a URL that is simply its birthday-messages article plus a '-funny' suffix \u2014 /inspiration/what-to-write/birthday-messages-funny \u2014 showing how cheaply a funny variant extends an existing messages article. 123greetings ABSENT despite 'Funny Cards' sitting in its own homepage title, and despite the m. host carrying a dedicated funny birthday taxonomy (/do/cards/birth_fun/p/2) that has no www counterpart. Highest-probability informational win in the batch: weakest competitors, no expertise requirement, format is purely a structured list."
+  },
+  {
+    "prompt": "free get well soon ecards",
+    "intent": "occasion",
+    "brands_cited": [
+      "Jacquie Lawson",
+      "RecoCards",
+      "123cards.com",
+      "123Greetings",
+      "Greetings Island",
+      "Blue Mountain",
+      "American Greetings",
+      "Smilebox",
+      "CardSnacks"
+    ],
+    "brand_present": true,
+    "brand_rank": 3,
+    "citation_sources": [
+      "https://www.jacquielawson.com/cards/get-well",
+      "https://recocards.com/uses/free-get-well-ecards/",
+      "https://www.bluemountain.com/ecards/get-well",
+      "https://www.americangreetings.com/ecards/get-well",
+      "https://www.123cards.com/get-well-soon-ecards/",
+      "https://www.123greetings.com/general/getwell/",
+      "https://www.greetingsisland.com/cards/thoughts-and-feelings/get-well",
+      "https://www.cardsnacks.com/ecards/get_well_soon",
+      "https://www.smilebox.com/maker/card-maker/get-well/"
+    ],
+    "winning_page_pattern": "Best grounded result in the batch alongside the seniors prompt: a genuine 123greetings DEEP page ranks \u2014 /general/getwell/, one of the 17 sitemap'd category hubs \u2014 confirming again that sitemap inclusion is what determines whether a citable deep page exists. Winning pattern is a flat, predictable occasion hub: /cards/get-well, /ecards/get-well, /get-well-soon-ecards/. Note 123greetings' URL is the structural outlier \u2014 /general/getwell/ buries the occasion under a meaningless 'general' segment and drops the word 'soon' that every competitor's slug carries and that the query itself contains. 123cards.com again ranks adjacent with the cleaner /get-well-soon-ecards/, sustaining the brand-confusion risk. Caveat on how the hub will be summarised: hub pages list ~500 cards each listed twice with '...'-truncated blurbs, so an engine extracting a description gets repetition and fragments rather than a clean statement of what the hub offers."
+  },
+  {
+    "prompt": "free anniversary ecards",
+    "intent": "occasion",
+    "brands_cited": [
+      "Punchbowl",
+      "Doozycards",
+      "RecoCards",
+      "Blue Mountain",
+      "123Greetings",
+      "123cards.com",
+      "American Greetings",
+      "CrossCards",
+      "CardFool"
+    ],
+    "brand_present": true,
+    "brand_rank": 5,
+    "citation_sources": [
+      "https://www.punchbowl.com/ecards/anniversary",
+      "https://www.doozycards.com/ecards/anniversary",
+      "https://www.americangreetings.com/ecards/anniversary",
+      "https://recocards.com/uses/free-anniversary-ecards/",
+      "https://www.bluemountain.com/ecards/anniversary",
+      "https://www.123greetings.com/anniversary/",
+      "https://www.123cards.com/anniversary-ecards/",
+      "https://www.crosscards.com/cards/anniversary/",
+      "https://www.cardfool.com/digital/t/occasion/anniversary"
+    ],
+    "winning_page_pattern": "A real deep page ranks \u2014 /anniversary/ \u2014 and this is 123greetings' cleanest URL of the batch: root-level, exact-match, better formed than the competitors' /ecards/anniversary. Yet it places only 5th, and the indexed title for it reads 'Free Anniversary eCards' which is correct and well-targeted. So on the one prompt where URL and title are both right, placement is still mid-pack, which points the cause away from on-page targeting and toward site-level authority and the crawlability ceiling: ~135 sitemap URLs with an identical fetch-time lastmod on every entry (a stamp Google discounts), no sitemap index, no m. sitemap, and a duplicate indexed host at h-source.123g.us serving the same www content and pointing at the same XML sitemap \u2014 all of which split and dilute signals sitewide rather than per-page. Worth a live check of whether /anniversary/ is ALSO reachable on h-source.123g.us and whether it self-canonicalises: needs_live_fetch=true."
+  },
+  {
+    "prompt": "free thank you ecards",
+    "intent": "occasion",
+    "brands_cited": [
+      "RecoCards",
+      "Grateful.org",
+      "Paperless Post",
+      "American Greetings",
+      "CrossCards",
+      "Blue Mountain",
+      "123cards.com",
+      "Kisseo"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "https://grateful.org/send-an-ecard/",
+      "https://www.paperlesspost.com/cards/group/thank-you-cards",
+      "https://recocards.com/uses/free-thank-you-ecards/",
+      "https://www.americangreetings.com/ecards/thank-you",
+      "https://www.americangreetings.com/free/ecards",
+      "https://www.crosscards.com/cards/thank-you/",
+      "https://www.bluemountain.com/ecards/thank-you",
+      "https://www.123cards.com/thank-you-ecards/",
+      "https://www.kisseo.com/ecard/thank-you"
+    ],
+    "winning_page_pattern": "The anomaly of the batch and the most actionable single finding. This is the ONLY occasion prompt where 123greetings is absent entirely \u2014 not homepage, not hub, nothing \u2014 while the three sibling occasion prompts (get well 3rd, anniversary 5th, grandparents 5th) all returned a deep page. Every competitor ranks the same flat pattern (/ecards/thank-you, /cards/thank-you, /thank-you-ecards/), including 123cards.com, which now ranks for birthday, get well, anniversary AND thank you \u2014 a clean sweep of the occasion set against the similarly-named brand. Since the site's ranking deep pages map one-to-one onto the 17 sitemap'd hubs, the most probable explanation is that thank-you is either not among those 17 hubs or sits at a URL that is not sitemap'd. That is a testable, cheap-to-fix hypothesis and I would check it first. Confirming whether a www thank-you hub exists, what its URL is, and whether it appears in sitemap.xml requires a live fetch that the egress policy blocks: needs_live_fetch=true."
+  },
+  {
+    "prompt": "free sympathy ecards",
+    "intent": "occasion",
+    "brands_cited": [
+      "Punchbowl",
+      "Paperless Post",
+      "CrossCards",
+      "The Comfort Company",
+      "RecoCards",
+      "123cards.com",
+      "American Greetings",
+      "SendWishOnline",
+      "Blue Mountain"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "punchbowl.com/ecards/sympathy",
+      "paperlesspost.com/cards/category/sympathy-cards",
+      "crosscards.com/cards/sympathy/",
+      "thecomfortcompany.com/pages/send-a-free-sympathy-ecard",
+      "recocards.com/uses/free-sympathy-ecards/",
+      "123cards.com/sympathy-ecards/",
+      "americangreetings.com/ecards/sympathy",
+      "sendwishonline.com/en/group-cards/sympathy",
+      "bluemountain.com/ecards/sympathy"
+    ],
+    "winning_page_pattern": "A single occasion landing page at a flat, readable slug (/ecards/sympathy, /cards/category/sympathy-cards) carrying prose ABOVE the card grid that speaks to the emotional situation \u2014 what to say to someone grieving, when to send. Engines lift that prose as the answer and cite the URL. 123greetings does NOT rank at all here despite certainly owning sympathy cards: its equivalent would be a deep /general/ or condolence subcategory that is not in the ~135-URL sitemap, has no descriptive prose (hub blurbs are truncated with '...'), and sits behind a taxonomy no crawler surfaces. Worst result in the batch, and the most commercially serious: competitor 123cards.com \u2014 the confusable near-identical brand \u2014 DOES take the slot 123greetings should own."
+  },
+  {
+    "prompt": "free good morning cards to send",
+    "intent": "occasion",
+    "brands_cited": [
+      "Canva",
+      "Joliecarte",
+      "CrossCards",
+      "PosterMyWall",
+      "123Greetings",
+      "CardSnacks",
+      "Greetings101",
+      "Greetings-Online"
+    ],
+    "brand_present": true,
+    "brand_rank": 5,
+    "citation_sources": [
+      "canva.com/cards/templates/good-morning/",
+      "joliecarte.com/en/everyday-occasions/image/good-morning-card",
+      "crosscards.com/cards/just-for-fun/good-morning.html",
+      "postermywall.com",
+      "123greetings.com/general/good_morning/",
+      "123greetings.com/tags/good_morning.html",
+      "cardsnacks.com/ecards/good_morning",
+      "greetings101.com/Everyday/Good-Morning-ecards"
+    ],
+    "winning_page_pattern": "A template/design-tool page (Canva, PosterMyWall) or a clean occasion page wins \u2014 note that two of the top four are DESIGN tools, not ecard senders, because they carry customization language engines read as actionable. 123greetings ranks 5th and has the right page (/general/good_morning/). The visible defect: it ranks its hub AND /tags/good_morning.html simultaneously for the same query \u2014 the user-tag page competing against the category hub. This is the thin-tag-page cannibalization predicted from the source review, now confirmed live in a real SERP. Two 123greetings URLs split one citation slot; an engine picks one arbitrarily and the hub's authority is halved. Consolidating tag pages to canonical hubs would concentrate this."
+  },
+  {
+    "prompt": "is 123greetings safe",
+    "intent": "brand",
+    "brands_cited": [
+      "123Greetings",
+      "Trustpilot",
+      "WOT (MyWOT)",
+      "Scamadviser",
+      "Scam Detector",
+      "EmailVeritas",
+      "AARP"
+    ],
+    "brand_present": true,
+    "brand_rank": 1,
+    "citation_sources": [
+      "trustpilot.com/review/www.123greetings.com",
+      "mywot.com/scorecard/123greetings.com/",
+      "scamadviser.com/check-website/123greetings.com",
+      "scam-detector.com/validator/123greetings-com-review/",
+      "emailveritas.com/en-us/url-checker/123greetings-com",
+      "123greetings.com/privacy_policy.html",
+      "help.123greetings.com/what-are-fraudulent-spam-phishing-emails_163.html",
+      "aarp.org/money/scams-fraud/greeting-card/"
+    ],
+    "winning_page_pattern": "Third-party trust-scoring pages win outright. Of nine results only TWO are brand-owned, and both are incidental (a privacy policy and a help-desk phishing FAQ). The brand does not control its own safety narrative on the highest-stakes query an ecard site faces with a 50-70 audience. The grounded AI answer reads 'legit per Scamadviser/Scam Detector, BUT users report spam email and sharing addresses with advertisers' (Trustpilot 3.2) and then sits beside an AARP article about greeting-card scams generally \u2014 guilt by adjacency. The page that would win is a brand-owned, prose, dated trust/safety explainer ('Is 123Greetings safe? How to tell a real 123Greetings email from a phishing one') with Organization schema and sameAs to the six linked social profiles. 123greetings has no such page, and the bare Organization entity (name + url only, no logo/sameAs/foundingDate) gives engines no entity to bind these third-party verdicts to. Highest-leverage single fix in this batch."
+  },
+  {
+    "prompt": "is 123greetings still free",
+    "intent": "brand",
+    "brands_cited": [
+      "123Greetings",
+      "Trustpilot",
+      "Google Play",
+      "Apple App Store"
+    ],
+    "brand_present": true,
+    "brand_rank": 1,
+    "citation_sources": [
+      "help.123greetings.com/is-this-service-free-how-do-i-pay-for-it_2.html",
+      "123greetings.com/free-ecards-faq.html",
+      "123greetings.com/app/",
+      "123greetings.com/",
+      "apps.apple.com/us/app/123greetings-cards-wishes/id718873921",
+      "play.google.com/store/apps/details?id=com.g123",
+      "trustpilot.com/review/www.123greetings.com",
+      "smartcustomer.com/reviews/123greetings.com"
+    ],
+    "winning_page_pattern": "The one prompt 123greetings fully owns \u2014 and the proof of what works. Four of the top results are brand-owned and the AI answer is built almost entirely from them, correctly reciting free-to-send plus the $5.99/yr Pro upgrade. The winning pages are help.123greetings.com/is-this-service-free... and /free-ecards-faq.html: PROSE PAGES THAT ANSWER A QUESTION IN SENTENCES. Not card pages, not hubs. This is the template the site already has and has not replicated \u2014 the entire AI-visible surface of 123greetings is currently a handful of FAQ pages, while its 30,000 cards and 17 hubs contribute almost nothing. Note the risk: the answer is assembled from the help subdomain, which is outside the www sitemap entirely, so this visibility is unmanaged and could vanish silently."
+  },
+  {
+    "prompt": "123greetings vs american greetings",
+    "intent": "brand",
+    "brands_cited": [
+      "123Greetings",
+      "American Greetings",
+      "Hallmark",
+      "Blue Mountain"
+    ],
+    "brand_present": true,
+    "brand_rank": 1,
+    "citation_sources": [
+      "comparably.com/competitors/123greetings-vs-american-greetings",
+      "similarweb.com/website/123greetings.com/competitors/",
+      "similarweb.com/website/americangreetings.com/competitors/",
+      "trustpilot.com/review/www.americangreetings.com",
+      "owler.com/company/hallmark/competitors",
+      "no1reviews.com/123greetings.html",
+      "aarp.org/money/scams-fraud/info-2019/greeting-card.html",
+      "123greetings.com/tags/america.html"
+    ],
+    "winning_page_pattern": "A dedicated head-to-head comparison page wins, and every one that ranks is third-party (Comparably, Similarweb, no1reviews, Owler). NEITHER brand owns the comparison. The AI answer is favorable to 123greetings almost by accident \u2014 it contrasts Trustpilot 3.7 (123greetings) against 1.2 (American Greetings) and states 123greetings is free while AG is not. That is a winnable narrative the brand is not capturing. The only 123greetings URL present is /tags/america.html \u2014 a thin user-tag page matching on the word 'America', i.e. an accidental keyword collision, not a real answer. Direct evidence that the /tags/ system generates pages that rank for the wrong intent. 123greetings has no comparison page; a '123Greetings vs paid ecard memberships' prose page would take this slot uncontested."
+  },
+  {
+    "prompt": "jacquie lawson alternatives free",
+    "intent": "comparative",
+    "brands_cited": [
+      "123Greetings",
+      "Blue Mountain",
+      "Thankbox",
+      "CardSnacks",
+      "Givingli",
+      "Minted",
+      "JibJab",
+      "Kudoboard"
+    ],
+    "brand_present": true,
+    "brand_rank": 1,
+    "citation_sources": [
+      "thankbox.com/blog/we-share-the-best-jacquie-lawson-alternatives-for-sharing-e-cards",
+      "kudoboard.com/blog/best-ecards/",
+      "cbinsights.com/company/jacquie-lawson/alternatives-competitors",
+      "semrush.com/website/jacquielawson.com/competitors/",
+      "similarweb.com/website/jacquielawson.com/competitors/",
+      "similarsitesearch.com/alternatives-to/jacquielawson.com",
+      "ollyjolly.com/5-best-ecard-websites"
+    ],
+    "winning_page_pattern": "Best 123greetings result in the batch \u2014 cited FIRST, with a full descriptive paragraph listing its occasion range. But the citation is entirely BORROWED: every source is a third-party roundup or competitor-analysis page (Thankbox's blog, Kudoboard's blog, CB Insights, Semrush, Similarweb). Zero 123greetings URLs. Its strongest AI visibility rests on other companies' blog posts describing it, which the brand neither controls nor can update \u2014 if Thankbox rewrites that post, the ranking evaporates. The winning page type is a curated 'best free alternatives' listicle with per-brand prose. 123greetings has no blog at all (none in the sitemap), so it cannot enter this format either for itself or to capture adjacent 'alternatives' demand. Note the strategic read: the audience for 'Jacquie Lawson but free' is exactly 123greetings' 50-70 demographic."
+  },
+  {
+    "prompt": "american greetings free alternative",
+    "intent": "comparative",
+    "brands_cited": [
+      "InstanteCard",
+      "Greetings Island",
+      "Canva",
+      "Hallmark",
+      "eCard Shack",
+      "Etsy",
+      "Paper Source"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "instantecard.com/american-greetings-alternative",
+      "ecardshack.com/american-greetings/",
+      "instantecard.com/blog/instantecard-vs-canva-vs-greeting-island-vs-american-greetings",
+      "americangreetings.com/member-benefits",
+      "similarweb.com/website/americangreetings.com/competitors/",
+      "instya.com/site/americangreetings.com",
+      "simplycodes.com/store/americangreetings.com"
+    ],
+    "winning_page_pattern": "The single most damaging absence in the batch. The winning page is a purpose-built competitor-conquest landing page at an explicit slug \u2014 instantecard.com/american-greetings-alternative \u2014 which ranks #1 and supplies the whole AI answer. The answer's core argument is verbatim 123greetings' actual value proposition: 'no subscription, no signup, no membership, sending AG usually means a recurring membership.' 123greetings has been free since 1997 and is absent, while InstanteCard, a far smaller brand, owns the position purely by having built one page that names the competitor in the URL and states the free/no-signup claim in prose. Contrast with the previous prompt: 123greetings wins 'jacquie lawson alternatives' on borrowed third-party roundups but loses 'american greetings alternative' because no roundup happened to cover it \u2014 proof the visibility is unowned and luck-dependent. A /american-greetings-alternative and /jacquie-lawson-alternative page pair is the cheapest available win."
+  },
+  {
+    "prompt": "send a free ecard by email",
+    "intent": "transactional",
+    "brands_cited": [
+      "Punchbowl",
+      "TheEcards",
+      "Canva",
+      "RecoCards",
+      "American Greetings",
+      "SendWishOnline",
+      "123Greetings",
+      "Blue Mountain"
+    ],
+    "brand_present": true,
+    "brand_rank": 7,
+    "citation_sources": [
+      "punchbowl.com/ecards",
+      "theecards.com/en/ecards",
+      "canva.com/create/ecards/",
+      "recocards.com/uses/free-ecards/",
+      "americangreetings.com/free/ecards",
+      "sendwishonline.com/en/ecards",
+      "123greetings.com/free-ecards-faq.html",
+      "bluemountain.com/ecards"
+    ],
+    "winning_page_pattern": "A top-level generic /ecards landing page that describes the SENDING MECHANIC in numbered prose \u2014 'pick a template, add recipient details, choose a delivery date, send' (TheEcards), 'no fees, no signup required' (RecoCards). Engines answering a how-do-I query need procedural sentences, and rank the sites that wrote them. 123greetings appears 7th of 8 and \u2014 again \u2014 via /free-ecards-faq.html rather than a real sending page. Its homepage does not rank for its own core transactional query. The site has no '/send-a-free-ecard' style capability page explaining the flow in prose; the hubs jump straight to ~500 card links with truncated blurbs, which gives a generative engine nothing to quote. Ranking 7th on the definitional query for your own 29-year-old category is the clearest measure of the prose deficit."
+  },
+  {
+    "prompt": "schedule a birthday ecard in advance free",
+    "intent": "transactional",
+    "brands_cited": [
+      "Paperless Post",
+      "American Greetings",
+      "Punchbowl",
+      "Blue Mountain",
+      "123cards.com",
+      "Instant eCard"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "paperlesspost.com/cards/category/free-birthday-ecards",
+      "americangreetings.com/free/ecards",
+      "punchbowl.com/ecards",
+      "americangreetings.com/ecards/birthday",
+      "bluemountain.com/ecards/birthday",
+      "123cards.com/birthday-ecards/",
+      "instantecard.com/birthday-ecards",
+      "paperlesspost.com/cards/group/birthday-cards"
+    ],
+    "winning_page_pattern": "A feature-explainer passage embedded in an occasion page, describing the scheduling step literally ('click Schedule Sending, enter the date and time' \u2014 Paperless Post; 'schedule up to a year in advance' \u2014 American Greetings). The AI answer is assembled almost entirely from these procedural sentences. 123greetings is absent. Two possibilities and they need separating: either the scheduling feature exists and is undocumented in crawlable prose, or it does not exist. This is the one gap in the batch I cannot resolve from the index \u2014 needs_live_fetch=true to confirm whether 123greetings offers advance scheduling at all. Either way the remedy is the same shape: a prose feature page. Note again 123cards.com takes the slot, deepening the brand-confusion pattern that runs through this whole batch."
+  },
+  {
+    "prompt": "free musical birthday cards online",
+    "intent": "transactional",
+    "brands_cited": [
+      "Smilebox",
+      "Doozy Cards",
+      "123 Greetings",
+      "123cards.com",
+      "RiverSongs",
+      "Blue Mountain",
+      "American Greetings",
+      "Sing Me Happy Birthday"
+    ],
+    "brand_present": true,
+    "brand_rank": 3,
+    "citation_sources": [
+      "smilebox.com/maker/card-maker/birthday/singing-musical-cards/",
+      "doozycards.com/ecards/birthday/musical",
+      "123greetings.com/birthday/birthday_songs/",
+      "123greetings.com/birthday/birthday_songs/songs55.html",
+      "123cards.com/birthday-ecards/",
+      "riversongs.com/happy-birthday-cards-greetings.html",
+      "bluemountain.com/ecards/birthday/singing",
+      "americangreetings.com/ecards/birthday/music"
+    ],
+    "winning_page_pattern": "123greetings' strongest category showing: ranks 3rd with BOTH a hub (/birthday/birthday_songs/) and an individual card (songs55.html) \u2014 the only prompt where a card page earns a citation. That makes this the prompt where the known card-template defects bite hardest and most measurably: songs55.html is served by the template that dual-types as Product AND VideoObject with a 0.00 Offer, shippingDetails and return policy, uses reviewCount where ratingCount belongs, and whose media loads via JS so a non-JS crawler sees ~30 words. A musical card is a VideoObject and nothing else; the Product typing is what the May 14 ranking cliff was traced to, and this is the query where fixing it is most directly testable. Competitors here rank pages that state the music mechanic in prose. Also note RiverSongs wins on 'no membership, no registration, no sign up' \u2014 the unclaimed 123greetings message again."
+  },
+  {
+    "prompt": "free ecards for coworkers",
+    "intent": "occasion",
+    "brands_cited": [
+      "Punchbowl",
+      "Doozy Cards",
+      "123 Greetings",
+      "American Greetings",
+      "RecoCards",
+      "Blue Mountain",
+      "SendWishOnline",
+      "Adobe Express"
+    ],
+    "brand_present": true,
+    "brand_rank": 3,
+    "citation_sources": [
+      "punchbowl.com/ecards/category_groups/workplace",
+      "doozycards.com/ecards/free/for-co-worker/free",
+      "123greetings.com/business/in_office_relationships/office25.html",
+      "americangreetings.com/ecards/for-co-worker",
+      "h-source.123g.us/business/in_office_relationships/bus_relation_ani4.html",
+      "recocards.com/uses/free-group-ecards-with-multiple-signers/",
+      "bluemountain.com/ecards/co-worker",
+      "sendwishonline.com/en/group-cards",
+      "123greetings.com/business/"
+    ],
+    "winning_page_pattern": "The most diagnostically valuable result in the batch. THE DUPLICATE HOST IS LIVE IN A REAL SERP: h-source.123g.us/business/in_office_relationships/bus_relation_ani4.html ranks as its own result alongside www.123greetings.com \u2014 confirming the duplicate host is not merely indexed but actively competing for the same citation slot with identical content. An engine grounding an answer here may cite 123g.us, attributing the brand's own content to an unrecognizable domain with no entity association. Compounding it, THREE 123greetings-family URLs appear for one query (www card, www hub, h-source card), splitting authority three ways. Also note a single CARD page (office25.html) outranks the /business/ hub \u2014 deep cards do earn citations, so card-template schema quality matters. Winning page type is a workplace CATEGORY page with prose about work occasions plus, increasingly, group-signing capability (RecoCards, SendWishOnline) \u2014 a feature 123greetings appears not to have and which is reshaping this whole query."
+  },
+  {
+    "prompt": "belated birthday card message ideas",
+    "intent": "informational",
+    "brands_cited": [
+      "Greenvelope",
+      "Shutterfly",
+      "1-800-Flowers",
+      "Punchbowl",
+      "Greetings Island",
+      "Ellacard",
+      "American Greetings",
+      "123cards.com",
+      "Adobe Express"
+    ],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "greenvelope.com/blog/happy-belated-birthday/",
+      "shutterfly.com/ideas/belated-birthday-wishes/",
+      "1800flowers.com/articles/birthdays/belated-happy-birthday-wishes",
+      "partyideas.punchbowl.com/p/happy-belated-birthday-messages",
+      "greetingsisland.com/cards/birthday/belated",
+      "ellacard.com/blog/the-50-best-belated-happy-birthday-wishes-messages-and-greetings-",
+      "americangreetings.com/inspiration/what-to-write/birthday-messages-belated",
+      "123cards.com/blog/how-to-write-belated-birthday-greetings-in-just-5-minutes/"
+    ],
+    "winning_page_pattern": "Pure editorial wins: every single result is a BLOG or advice article (/blog/, /ideas/, /articles/, /inspiration/what-to-write/), and the AI answer is built by harvesting example message strings from them. This is the archetypal generative-citation format \u2014 a list of quotable sentences \u2014 and it is the format 123greetings is structurally excluded from, having no blog in its sitemap. Every competitor has built an editorial arm: American Greetings' /inspiration/what-to-write/ hub is a purpose-built answer factory, and even 123cards.com ranks with a blog post. 123greetings has closely related raw material (/birthday/birthday_wishes/ wishes pages) but as card listings, not quotable prose. Critical strategic note: 'what do I write' queries are where the audience actually starts, and losing all of them means 123greetings is invisible at the top of its own funnel \u2014 the user is handed a competitor's card link at the moment of intent."
+  },
+  {
+    "prompt": "how to sign a card for a coworker",
+    "intent": "informational",
+    "brands_cited": [],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "NOT MEASURED \u2014 session WebSearch budget exhausted (200/200) before this prompt ran; DuckDuckGo HTML fallback also returned EGRESS_BLOCKED"
+    ],
+    "winning_page_pattern": "NOT MEASURED \u2014 no search was executed for this prompt, so brands_cited is empty and brand_present=false reflects ABSENCE OF DATA, not absence from results. Do not read this row as a finding. Needs a re-run with search budget. Expected shape by analogy with 'belated birthday card message ideas' (same informational what-to-write intent, measured above): editorial/blog pages win, American Greetings' /inspiration/what-to-write/ hub and workplace-etiquette blogs likely dominate, and 123greetings is likely absent for the same structural reason \u2014 no blog. That is an inference from the adjacent measured prompt, NOT an observation."
+  },
+  {
+    "prompt": "free printable vs ecard which is better",
+    "intent": "comparative",
+    "brands_cited": [],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "NOT MEASURED \u2014 session WebSearch budget exhausted (200/200) before this prompt ran; DuckDuckGo HTML fallback also returned EGRESS_BLOCKED"
+    ],
+    "winning_page_pattern": "NOT MEASURED \u2014 no search was executed; brand_present=false means no data, not a confirmed absence. Do not treat as a finding. Needs a re-run with search budget. Weak prior from the measured batch only: Greetings Island and Canva surfaced repeatedly on printable-adjacent queries ('good morning cards', 'american greetings free alternative'), and comparative prompts in this batch were consistently won by third-party or purpose-built comparison pages that 123greetings does not own \u2014 so absence would be consistent with the pattern. Inference, not observation."
+  },
+  {
+    "prompt": "free christmas ecards to send",
+    "intent": "occasion",
+    "brands_cited": [],
+    "brand_present": false,
+    "brand_rank": 0,
+    "citation_sources": [
+      "NOT MEASURED \u2014 session WebSearch budget exhausted (200/200) before this prompt ran; DuckDuckGo HTML fallback also returned EGRESS_BLOCKED"
+    ],
+    "winning_page_pattern": "NOT MEASURED \u2014 no search was executed; brand_present=false means no data, not a confirmed absence. Do not treat as a finding. This is the highest-value unmeasured prompt of the three and should be re-run first: Christmas is the peak-seasonality query for the entire category, the site's ~12 'current events' sitemap URLs suggest seasonal hubs do exist (unlike sympathy), and the measured occasion prompts split evenly \u2014 123greetings ranked on 'good morning' (5th) and 'coworkers' (3rd) but was absent on 'sympathy'. Which side Christmas falls on is genuinely unknown from this batch and materially changes the seasonal-content priority."
+  }
+]
